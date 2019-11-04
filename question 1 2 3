@@ -1,0 +1,23 @@
+creating multi container app 
+write docker compose file and mention the image NodeJS -12.5.0 and NGNIX -1.16.0 and Redis-5.0.4 
+docker compose create isolated multiple containers 
+we should mention port in docker compose and it allows that app to run on that particular port and that port should be open in security group levels
+we use docker publish command to publish over the internet for outside access 
+command to show versions
+version --NodeJS 
+version --Nginx 
+version --Redis
+application will be open and accessible if port is open at security group level {server ip:80}
+
+ANSIBLE PALYBOOK TO TO DO TASKS
+once ansible installed on server then switch as sudo su - and then  by using command useradd ABCD passwd XYZ 
+to create key value format we use ansible vault 
+chkconfig post and sshd restart
+
+Shell script 
+security.sh
+#!/bin/bash
+find.-iname "0.0.0.0/0"
+if [$?-ne 0];then 
+email-s "posrt is not open to external world"
+fi
